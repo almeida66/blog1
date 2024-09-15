@@ -29,6 +29,6 @@ titles_from_headings:
 defaults:
   - scope:
       path: ""
-      type: posts
+      type: 
     values:
       tags: allgemein

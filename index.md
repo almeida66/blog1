@@ -1,5 +1,5 @@
 ---
-title: Welcome to my blog
+title: 
 ---
 This is a backup of my (perl-)blog, powered by a mini-server, now adapted to github. 
 Main points concern to mini computer and data processing stuff.

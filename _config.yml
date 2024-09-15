@@ -1,1 +1,34 @@
+title: "Almeida's blog"
+author: "A. C. Almeida"
+description: "Die Seiten dienen einem ausschließlich privaten Zweck, ohne Geschaeftstaetigkeit oder Gewinnerzielungsabsicht!" # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+
+# Email / Social media user names used by the minima theme:
+# All of these are optional and can be removed or commented out
+email: "antonio<@>almeida.de"
+github_username: "almeida66"
+#linkedin_username: "linkedinuser"
+
 theme: minima
+rss: rss
+
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+
+    
+#plugins:
+ # - jekyll-feed
+  #- jekyll-sitemap
+  
+home_post_limit: 5
+
+titles_from_headings:
+  strip_title: true
+  collections: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      tags: allgemein

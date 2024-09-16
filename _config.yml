@@ -16,9 +16,9 @@ kramdown:
     disable: true
 
     
-#plugins:
- # - jekyll-feed
-  #- jekyll-sitemap
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
   
 home_post_limit: 5
 

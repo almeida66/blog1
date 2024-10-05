@@ -10,4 +10,4 @@ Ich habs dann mittels Software-Hack [checkm8-a5](https://github.com/synackuk/che
 > [!NOTE]:
 > es funktioniert doch, aber ueber Umwege mittels python-Skripte [iPro beta](https://alwaysappleftd.com/ipro_beta_program.html) und unter Zuhilfenahme von Sliver um den SSH-port zu oeffnen und die Setup.app zu entfernen. Die Verzeichnis-Pfade in den sh-Dateien des iPro sind vermutlich noch anzupassen - immernoch *beta*. Das Ganze via Mac.
 
-Leider klappt(e) das *Aktivieren* immernoch nicht, damit wurde es schwierig alte Apps nachzuladen... dafuer ist nun das Ersatzboard aus China angekommen. Und mit [sideloadly]8https://sideloadly.io/) klappt es nun alte Apps zu verwenden.
+Leider klappt(e) das *Aktivieren* immernoch nicht, damit wurde es schwierig alte Apps nachzuladen... dafuer ist nun das Ersatzboard aus China angekommen. Und mit [sideloadly](8https://sideloadly.io/) klappt es nun alte Apps zu verwenden.

@@ -2,9 +2,9 @@ Beide Programme sind Bestandteil der DTU-Auswertung, logischerweise aus open-sou
 
 Habe diese später auf einem Raspi0 zusammengefasst.
 
-Man faengt mit dem sog. **MQTT** broker, namens [mosquitto](https://mosquitto.org/), an. Dieser bedient dann unter der eigenen IP den Port 1883. In der Konfig sollte man fuer interne Zwecke den *allow_anonymous* auf *true* stellen.
+Man faengt mit dem sog. **MQTT** broker, namens [mosquitto](https://mosquitto.org/), an. Dieser bedient dann unter der eigenen IP den Port 1883. In der Konfig sollte man fuer interne Zwecke den *allow_anonymous* auf *true* stellen. Danach ein `systemctl restart mosquitto` , je nach linux-derivat wird der service ggf. anders geschrieben.
 
-Danach folgt das Visualisierungs-Tool [node-red](https://nodered.org/); für das Einbinden der DTU, samt Weiterleitung an [thingspeak](https://thingspeak.com/channels/1969015).
+Danach folgt das Visualisierungs-Tool [node-red](https://nodered.org/); für das Einbinden der DTU, samt Weiterleitung an [thingspeak](https://thingspeak.com/channels/1969015). Unter *settings.js* muss man ggf. noch den lokalen host angeben, sonst laeufts nur unter 127.0.0.1. Zudem noch die sog. Paletten *contrib-thingspeak* und *dashboard* laden. 
 
 Bei raspi-debian macht die Installation via **apt** Stress; moeglich dass das Paket fuer armhf nicht sauber ist.
 Dafuer existiert auf github diese Variante via npm: `bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)`.
@@ -13,3 +13,6 @@ Danach stehen die Befehle: *node-red-start|stop|restart* zur Verfuegung; ggf. di
 Danach steht dieser unter der IP und Port 1881 bereit.
 
 In der c't [Ausgabe 03/23](https://www.heise.de/select/ct/2023/3/softlinks/y79g) wurde ein Listing fuers Hoymiles-solar bereitgestellt.
+
+> [!NOTE]
+> Inzwischen das Gesamtpaket als [proxmox](https://www.proxmox.com/en/) VMs bzw. LXC aufgesetzt.

@@ -1,5 +1,5 @@
 ---
-macintosh
+tags: macintosh
 ---
 ## Mac mini ii
 Ja, es geht weiterhin um **proxmox**, alias dem Clusteraufbau mit 2x Mac mini + Qdevice. Der Macmini als unibody hat bereits ein eingebautes Netzteil, also wurde kurzerhand ein 2tes Exemplar geholt. 

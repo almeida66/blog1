@@ -11,10 +11,10 @@ Am besten eine statische IP-Adresse vergeben um den 2ten Node (macmini) entsprec
 Damit der Spass auch Sinn macht sollte ein Backup-Server in Form einer NAS o.ä. zusaetzlich aufgesetzt werden; damit wird zudem ein Quorum (Mehrheit) aufgesetzt, um Entscheidungen zu faellen - das sog. **qdevice**.
 
 Als qdevice wird kurzerhand ein aufgemotzter (radxa 4c+)[https://radxa.com/products/rock4/4cp/] mit satten 4GB, Gigabit Ethernet und USB-3 mit einem minimal-(ARMbian)[https://www.armbian.com/rockpi4/] aufgesetzt. Als NAS kommt das schlanke (openmediavault)[https://www.openmediavault.org/] in Frage. Mittels vorbereitete Skripte kann man das Ganze auf der Kommandozeile automatisiert ausführen:
-'wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/preinstall | sudo bash'
+`wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/preinstall | sudo bash`
 
 Ein reboot tut gut - danach folgt die eigentlich Installation mit:
-'wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash'
+`wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash`
 Es dauert schon eine Weile, da etliche binaries geholt und installiert werden. Irgendwann kommt die Info sich doch via Browser bei der IP-Adresse anzumelden.
 
 Ich nutze hierbei eine am USB-3-port angeschlossene NVMe-disk; etwas trikky damit diese von OMV erkannt wird. Man sollte diese schon *mounten*, vermutlich ist das aber systembedingt.
@@ -22,6 +22,6 @@ Egal, auch hier eine statitsche IP-Adresse verpassen und unter *Storage* die neu
 
 Nachdem alle Geraete an einem Hub haengen - im gleichen Netzwerk - folgt Teil 2: In promox dann unter **Backup** das NSF-Laufwerk mittels IP-Adresse bekanntgeben; fuer beide Nodes freigeben.
 
-Auf der Kommandozeile beider Nodes wird 'apt install corosync-qdevice' ausgeführt. Im Qdevice - alias radxa 4c+ - 'apt install corosync-qdevice corosync-qnetd' installiert. Soweit so gut, dann folgt im Cluster (Macmini 1) der Aufruf 'pvecm qdevice setup <IP-Adresse radxa/qdevice> -f'. Im ARMbian ist eh ssh und root-Zugang eingerichtet - wichtig - damit erfolgt die Konfiguration des Quorums.
+Auf der Kommandozeile beider Nodes wird `apt install corosync-qdevice` ausgeführt. Im Qdevice - alias radxa 4c+ - `apt install corosync-qdevice corosync-qnetd` installiert. Soweit so gut, dann folgt im Cluster (Macmini 1) der Aufruf `pvecm qdevice setup <IP-Adresse radxa/qdevice> -f`. Im ARMbian ist eh ssh und root-Zugang eingerichtet - wichtig - damit erfolgt die Konfiguration des Quorums.
 
-'pvecm status' sollte dann die Nodes und *Votes* anzeigen, ggf. 'systemctl status corosync' zur weiteren Prüfung eingeben.
+'pvecm status' sollte dann die Nodes und *Votes* anzeigen, ggf. `systemctl status corosync` zur weiteren Prüfung eingeben.

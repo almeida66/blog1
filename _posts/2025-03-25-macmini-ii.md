@@ -4,13 +4,13 @@ tags: macintosh
 ## Mac mini ii
 Ja, es geht weiterhin um **proxmox**, alias dem Clusteraufbau mit 2x Mac mini + Qdevice. Der Macmini als unibody hat bereits ein eingebautes Netzteil, also wurde kurzerhand ein 2tes Exemplar geholt. 
 
-Mit dem Erscheinen der Mx-Versionen werden diese quasi verschenkt. Naja, Core2duo ist ja nicht wirklich flott, aber fuer Privatanwendungen voellig ausreichend. Kurzerhand eine SSD-SATA samt mehr RAM (aktuell 8GB) beordet und eingebaut. Den (proxmox)[https://www.proxmox.com/en/downloads] Installer kann man direkt verwenden, ohne den Umweg (eh debian-basiert) ueber Debian-Installation zu nehmen.
+Mit dem Erscheinen der Mx-Versionen werden diese quasi verschenkt. Naja, Core2duo ist ja nicht wirklich flott, aber fuer Privatanwendungen voellig ausreichend. Kurzerhand eine SSD-SATA samt mehr RAM (aktuell 8GB) beordet und eingebaut. Den [proxmox](https://www.proxmox.com/en/downloads) Installer kann man direkt verwenden, ohne den Umweg (eh debian-basiert) ueber Debian-Installation zu nehmen.
 
 Am besten eine statische IP-Adresse vergeben um den 2ten Node (macmini) entsprechen zu konfigurieren. Unter *datacenter* wird ein Cluster mit ent. *fingerprint* erzeugt. Diesen muss man im 2ten Node nach *join cluster* eintragen. Mittels ssh verbindet sich das Ganze, nach einer Weile taucht der Icon des 2ten Macmini im "1" auf. Die GUI-Oberfläche ist dann nur eine!
 
 Damit der Spass auch Sinn macht sollte ein Backup-Server in Form einer NAS o.ä. zusaetzlich aufgesetzt werden; damit wird zudem ein Quorum (Mehrheit) aufgesetzt, um Entscheidungen zu faellen - das sog. **qdevice**.
 
-Als qdevice wird kurzerhand ein aufgemotzter (radxa 4c+)[https://radxa.com/products/rock4/4cp/] mit satten 4GB, Gigabit Ethernet und USB-3 mit einem minimal-(ARMbian)[https://www.armbian.com/rockpi4/] aufgesetzt. Als NAS kommt das schlanke (openmediavault)[https://www.openmediavault.org/] in Frage. Mittels vorbereitete Skripte kann man das Ganze auf der Kommandozeile automatisiert ausführen:
+Als qdevice wird kurzerhand ein aufgemotzter [radxa 4c+](https://radxa.com/products/rock4/4cp/) mit satten 4GB, Gigabit Ethernet und USB-3 mit einem minimal-[ARMbian](https://www.armbian.com/rockpi4/) aufgesetzt. Als NAS kommt das schlanke [openmediavault](https://www.openmediavault.org/) in Frage. Mittels vorbereitete Skripte kann man das Ganze auf der Kommandozeile automatisiert ausführen:
 `wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/preinstall | sudo bash`
 
 Ein reboot tut gut - danach folgt die eigentlich Installation mit:

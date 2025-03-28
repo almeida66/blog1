@@ -14,7 +14,7 @@ Als qdevice wird kurzerhand ein aufgemotzter [radxa 4c+](https://radxa.com/produ
 `wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/preinstall | sudo bash`
 
 Ein reboot tut gut - danach folgt die eigentlich Installation mit:
-`wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash`
+`wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/install | sudo bash` .
 Es dauert schon eine Weile, da etliche binaries geholt und installiert werden. Irgendwann kommt die Info sich doch via Browser bei der IP-Adresse anzumelden.
 
 Ich nutze hierbei eine am USB-3-port angeschlossene NVMe-disk; etwas trikky damit diese von OMV erkannt wird. Man sollte diese schon *mounten*, vermutlich ist das aber systembedingt.
@@ -24,4 +24,4 @@ Nachdem alle Geraete an einem Hub haengen - im gleichen Netzwerk - folgt Teil 2:
 
 Auf der Kommandozeile beider Nodes wird `apt install corosync-qdevice` ausgeführt. Im Qdevice - alias radxa 4c+ - `apt install corosync-qdevice corosync-qnetd` installiert. Soweit so gut, dann folgt im Cluster (Macmini 1) der Aufruf `pvecm qdevice setup <IP-Adresse radxa/qdevice> -f`. Im ARMbian ist eh ssh und root-Zugang eingerichtet - wichtig - damit erfolgt die Konfiguration des Quorums.
 
-'pvecm status' sollte dann die Nodes und *Votes* anzeigen, ggf. `systemctl status corosync` zur weiteren Prüfung eingeben.
+`pvecm status` sollte dann die Nodes und *Votes* anzeigen, ggf. `systemctl status corosync` zur weiteren Prüfung eingeben.

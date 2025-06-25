@@ -16,6 +16,6 @@ Grob wird man folgende Tätigkeiten ausführen (siehe die vielen Hilfen aus dem 
 + create firewall (accept)
 + create static route (optional)
 + create peer + keys
-Letzteres stellt für die Clients (u.a. smartphone) einen QR-Code für die wirklich sehr einfache Übertragung aufs handy.
 
+Letzteres stellt für die Clients (u.a. smartphone) einen QR-Code für die wirklich sehr einfache Übertragung aufs handy.
 Damit sollte dann beim handy via browser+vpn "nach Hause" Kontakt aufnehmen können. Ggf. aufs dynDNS achten, die Skripte sind je nach Anbieter schon mal zickig.

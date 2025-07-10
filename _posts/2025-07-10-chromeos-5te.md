@@ -1,7 +1,7 @@
 ---
 tags: libreboot
 ---
-##ChromeOS, die 5te
+## ChromeOS, die 5te
 Ja, man(n) kann es nicht lassen. Was verscheberln die diese auch. Diesmal mal eher was relativ Neuwertiges, ein ACER 314-4H mit satten 8GB RAM und 128eMMC und einem intel N100. Ich würde sagen aktuell der schnellste aus der Sammlung.
 Ok, hier würde ChromeOS tatsächlich noch einige Jahre Support bieten, aber wer will schon seine Daten der "US-Cloud" anvertrauen...
 

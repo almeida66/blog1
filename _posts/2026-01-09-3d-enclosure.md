@@ -17,4 +17,5 @@ Das Netzteil sollte nicht allzu warm werden und entsprechend Aussen separat befe
 Dann auf dem oberen "Deckel", alias Tischplatte, ein Loch (oder Langloch) für die Filamentzufuhr anbringen; etwa auf Position des original Rollenhalters. Von prusa exitieren Muster für Rollenhalter zum Selberdrucken, sogar mit/für Metall-Lager 608zz. Das Verschrauben des Originalarms auf der Tischplatte funktioniert natürlich auch.
 
 Unter der unteren Tischplatte können Schubladen oder Fächer angebracht werden. Ich selbst habe einfach einen 40x30 grossen Kunststoffbehälter aus dem Baumarkt mit etwa 7,5cm Höhe als Schublade umgestaltet.
-<a href="url"><img src="https://almeida66.github.io/blog1/img/ikeahack.jpeg" width="25%" height="25%"></a>
+
+<a><img src="https://almeida66.github.io/blog1/img/ikeahack.jpeg" width="25%" height="25%"></a>

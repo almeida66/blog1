@@ -18,4 +18,4 @@ Dann auf dem oberen "Deckel", alias Tischplatte, ein Loch (oder Langloch) für d
 
 Unter der unteren Tischplatte können Schubladen oder Fächer angebracht werden. Ich selbst habe einfach einen 40x30 grossen Kunststoffbehälter aus dem Baumarkt mit etwa 7,5cm Höhe als Schublade umgestaltet.
 
-<a><img src="https://almeida66.github.io/blog1/img/ikeahack.jpeg" width="25%" height="25%"></a>
+<a><img src="../img/ikeahack.jpeg" width="25%" height="25%"></a>

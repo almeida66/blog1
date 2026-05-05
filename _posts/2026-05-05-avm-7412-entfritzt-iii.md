@@ -9,4 +9,4 @@ Weiterhin *adblock* installiert und dann *DDNs*; zusammen gabs Probleme: die mei
 Aber was sehe ich: *adblock-fast* ist zwar ähnlich aufgebaut, aber wohl anderes Konzept. Bis auf das Neuladen der Blocklists scheint es recht *responsive* zu sein.
 Und DDNs funktioniert nun auch. Ich brauche noch was anderes fuers wireguard...
 > [!NOTE]
-> Doof, zu spät entdeckt: die wireguard luci-app hat tatsächlich unter *global settings* die Option **curl** explizit zu nutzen.
+> Doof, zu spät entdeckt: die ddns luci-app hat tatsächlich unter *global settings* die Option **curl** explizit zu nutzen.

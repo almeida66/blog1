@@ -2,7 +2,7 @@
 tags: ARM
 ---
 ## wireguard ii
-Aktuell werden EOL unifi Geräte wie der **USG-3P**, alias UniFi Security Gateway, für wenig € verschenkt und das mit 3x 1Gb Ports. ARM und [OpenWRT](https://openwrt.org/toh/ubiquiti/unifi_security_gateway_3p) tauglich. Da dürfte auch [Wireguard](https://openwrt.org/docs/guide-user/services/vpn/wireguard/server) funktionieren. 
+Aktuell werden EOL unifi Geräte wie der **USG-3P**, alias UniFi Security Gateway, für wenig € verschenkt und das mit 3x 1Gb Ports. MIPS und [OpenWRT](https://openwrt.org/toh/ubiquiti/unifi_security_gateway_3p) tauglich. Da dürfte auch [Wireguard](https://openwrt.org/docs/guide-user/services/vpn/wireguard/server) funktionieren. 
 
 Dazu muss das Gehäuse geöffnet werden und sowohl die USB-Speicherkarte, als auch der Anschluss* für die Erstinstallation vorbereitet werden.
 
